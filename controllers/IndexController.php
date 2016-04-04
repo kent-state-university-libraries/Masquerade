@@ -18,9 +18,6 @@ class Masquerade_IndexController extends Omeka_Controller_AbstractActionControll
     public function saveAction()
     {
         $params = $this->_getAllParams();
-
-        $session = $db->query("SELECT * FROM `{$db->prefix}sessions`
-            WHERE id = ?", session_id())->fetchObject();
         $data = explode('}', session_encode());
         $new_data = '';
         foreach ($data as $element) {
