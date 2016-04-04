@@ -1,4 +1,4 @@
-# Redirect
+# Masquerade
 
 An Omeka plugin that allows site administrators to login as other users
 
